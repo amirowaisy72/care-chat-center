@@ -68,9 +68,7 @@ function PhoneMockup() {
         <div className="flex items-center justify-between px-5 pt-3 text-[8px] font-bold text-foreground">
           <span>10:24</span><span className="tracking-wider">••• ▰</span>
         </div>
-        <div className="mt-9 flex flex-col items-center px-4">
-        </div>
-        <div className="mx-4 mt-6 rounded-lg bg-message p-3 shadow-panel">
+        <div className="mx-4 mt-16 rounded-lg bg-message p-3 shadow-panel">
           <p className="text-xs leading-relaxed text-foreground">Hello! <span aria-hidden="true">👋</span><br />How can we help you today?</p>
           <p className="mt-2 text-right text-[8px] text-muted-foreground">10:24 AM ✓✓</p>
         </div>
