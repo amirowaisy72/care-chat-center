@@ -1,13 +1,17 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
   ArrowRight,
+  BadgeCheck,
   Bolt,
   CheckCircle2,
   Clock3,
+  Headphones,
   MessageCircle,
   ShieldCheck,
   Sparkles,
+  UserRound,
   UsersRound,
+  Wrench,
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -56,10 +60,33 @@ function WhatsappIcon({ className = "size-5" }: { className?: string }) {
   );
 }
 
+const supportTags = [
+  { icon: UserRound, label: "Account support", side: "left", top: "top-[72px]" },
+  { icon: Headphones, label: "Service queries", side: "left", top: "top-[188px]" },
+  { icon: Wrench, label: "Technical assistance", side: "left", top: "top-[304px]" },
+  { icon: BadgeCheck, label: "Verification help", side: "right", top: "top-[72px]" },
+  { icon: ShieldCheck, label: "Privacy & security", side: "right", top: "top-[188px]" },
+  { icon: MessageCircle, label: "General enquiries", side: "right", top: "top-[304px]" },
+];
+
 function PhoneMockup() {
   return (
-    <div className="relative mx-auto h-[445px] w-full max-w-[430px]" aria-label="NexGenZ support conversation preview">
-
+    <div className="relative mx-auto h-[445px] w-full max-w-[620px]" aria-label="NexGenZ support conversation preview">
+      {supportTags.map((tag) => {
+        const Icon = tag.icon;
+        return (
+          <span
+            key={tag.label}
+            aria-hidden="true"
+            className={`absolute ${tag.side === "left" ? "left-0" : "right-0"} ${tag.top} hidden animate-rise-delayed items-center gap-2.5 rounded-lg border border-border bg-card/80 px-3 py-2.5 text-[11px] font-semibold text-foreground shadow-panel backdrop-blur-sm lg:flex`}
+          >
+            <span className="grid size-7 place-items-center rounded-md border border-primary/50 bg-primary/10 text-primary">
+              <Icon className="size-3.5" />
+            </span>
+            {tag.label}
+          </span>
+        );
+      })}
 
       <div className="phone-shell absolute left-1/2 top-0 h-[440px] w-[238px] -translate-x-1/2 overflow-hidden rounded-[2.4rem] border-[5px] border-device bg-device shadow-phone">
         <div className="absolute left-1/2 top-0 z-10 h-6 w-24 -translate-x-1/2 rounded-b-2xl bg-device" />
