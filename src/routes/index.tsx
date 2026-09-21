@@ -5,12 +5,9 @@ import {
   Bolt,
   CheckCircle2,
   Clock3,
-  Headphones,
-  LockKeyhole,
   MessageCircle,
   ShieldCheck,
   Sparkles,
-  UserRound,
   UsersRound,
 } from "lucide-react";
 
@@ -61,28 +58,10 @@ function WhatsappIcon({ className = "size-5" }: { className?: string }) {
   );
 }
 
-function SupportTag({ icon: Icon, children }: { icon: typeof UserRound; children: string }) {
-  return (
-    <div className="flex items-center gap-2 rounded-md border border-border bg-card/90 px-3 py-2.5 text-[11px] font-semibold text-foreground shadow-panel backdrop-blur-md">
-      <Icon className="size-3.5 text-primary" />
-      {children}
-    </div>
-  );
-}
-
 function PhoneMockup() {
   return (
     <div className="relative mx-auto h-[445px] w-full max-w-[430px]" aria-label="NexaCare support conversation preview">
-      <div className="absolute left-0 top-24 hidden space-y-2 lg:block">
-        <SupportTag icon={UserRound}>Account support</SupportTag>
-        <SupportTag icon={Headphones}>Service questions</SupportTag>
-        <SupportTag icon={ShieldCheck}>Technical assistance</SupportTag>
-      </div>
-      <div className="absolute right-0 top-24 hidden space-y-2 lg:block">
-        <SupportTag icon={BadgeCheck}>Verification help</SupportTag>
-        <SupportTag icon={LockKeyhole}>Privacy & security</SupportTag>
-        <SupportTag icon={MessageCircle}>General enquiries</SupportTag>
-      </div>
+
 
       <div className="phone-shell absolute left-1/2 top-0 h-[440px] w-[238px] -translate-x-1/2 overflow-hidden rounded-[2.4rem] border-[5px] border-device bg-device shadow-phone">
         <div className="absolute left-1/2 top-0 z-10 h-6 w-24 -translate-x-1/2 rounded-b-2xl bg-device" />
