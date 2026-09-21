@@ -130,8 +130,6 @@ function Index() {
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 sm:px-8">
           <Brand />
           <nav className="hidden items-center gap-8 text-xs font-semibold text-muted-foreground md:flex" aria-label="Main navigation">
-            <a href="#top" className="transition-colors hover:text-primary">Home</a>
-            <a href="#support" className="transition-colors hover:text-primary">Support</a>
             <a href="#process" className="transition-colors hover:text-primary">How it works</a>
             <a href="#trust" className="transition-colors hover:text-primary">Why us</a>
           </nav>
