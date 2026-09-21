@@ -78,10 +78,10 @@ function PhoneMockup() {
           <span
             key={tag.label}
             aria-hidden="true"
-            className={`absolute ${tag.side === "left" ? "left-0" : "right-0"} ${tag.top} hidden animate-rise-delayed items-center gap-2.5 rounded-lg border border-border bg-card/80 px-3 py-2.5 text-[11px] font-semibold text-foreground shadow-panel backdrop-blur-sm lg:flex`}
+            className={`absolute ${tag.side === "left" ? "left-0" : "right-0"} ${tag.top} hidden animate-rise-delayed items-center gap-2 rounded-lg border border-border bg-card/80 px-2.5 py-2.5 text-[10px] font-semibold text-foreground shadow-panel backdrop-blur-sm lg:flex`}
           >
-            <span className="grid size-7 place-items-center rounded-md border border-primary/50 bg-primary/10 text-primary">
-              <Icon className="size-3.5" />
+            <span className="grid size-6 shrink-0 place-items-center rounded-md border border-primary/50 bg-primary/10 text-primary">
+              <Icon className="size-3" />
             </span>
             {tag.label}
           </span>
