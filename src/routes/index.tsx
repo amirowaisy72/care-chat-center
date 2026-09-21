@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
   ArrowRight,
-  BadgeCheck,
   Bolt,
   CheckCircle2,
   Clock3,
@@ -14,12 +13,12 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "NexaCare | Customer Support" },
+      { title: "NexGenZ | Customer Support" },
       {
         name: "description",
-        content: "Reach the NexaCare customer support team quickly and securely on WhatsApp.",
+        content: "Reach the NexGenZ customer support team quickly and securely on WhatsApp.",
       },
-      { property: "og:title", content: "NexaCare Customer Support" },
+      { property: "og:title", content: "NexGenZ Customer Support" },
       {
         property: "og:description",
         content: "Friendly, private customer support when you need it.",
@@ -32,17 +31,17 @@ export const Route = createFileRoute("/")({
 });
 
 const whatsappLink =
-  "https://wa.me/18392310239?text=Hello%20NexaCare%2C%20I%20need%20help%20with%20my%20account.";
+  "https://wa.me/18392310239?text=Hello%20NexGenZ%2C%20I%20need%20help%20with%20my%20account.";
 
 function Brand() {
   return (
-    <a href="#top" className="group flex items-center gap-2.5" aria-label="NexaCare home">
+    <a href="#top" className="group flex items-center gap-2.5" aria-label="NexGenZ home">
       <span className="relative grid size-9 place-items-center" aria-hidden="true">
         <span className="absolute inset-1 rotate-45 rounded-sm border-2 border-primary transition-transform duration-300 group-hover:rotate-[135deg]" />
         <span className="size-2 rounded-full bg-primary shadow-glow" />
       </span>
       <span>
-        <span className="block font-display text-base font-bold leading-none text-foreground">NexaCare</span>
+        <span className="block font-display text-base font-bold leading-none text-foreground">NexGenZ</span>
         <span className="mt-1 block text-[9px] font-bold uppercase tracking-[0.28em] text-muted-foreground">Support</span>
       </span>
     </a>
@@ -60,7 +59,7 @@ function WhatsappIcon({ className = "size-5" }: { className?: string }) {
 
 function PhoneMockup() {
   return (
-    <div className="relative mx-auto h-[445px] w-full max-w-[430px]" aria-label="NexaCare support conversation preview">
+    <div className="relative mx-auto h-[445px] w-full max-w-[430px]" aria-label="NexGenZ support conversation preview">
 
 
       <div className="phone-shell absolute left-1/2 top-0 h-[440px] w-[238px] -translate-x-1/2 overflow-hidden rounded-[2.4rem] border-[5px] border-device bg-device shadow-phone">
@@ -68,16 +67,7 @@ function PhoneMockup() {
         <div className="flex items-center justify-between px-5 pt-3 text-[8px] font-bold text-foreground">
           <span>10:24</span><span className="tracking-wider">••• ▰</span>
         </div>
-        <div className="mt-7 flex flex-col items-center px-4">
-          <span className="grid size-14 place-items-center rounded-xl bg-whatsapp text-whatsapp-foreground shadow-glow">
-            <WhatsappIcon className="size-9" />
-          </span>
-          <div className="mt-4 flex items-center gap-1.5 text-sm font-bold text-foreground">
-            NexaCare <BadgeCheck className="size-4 fill-primary text-primary-foreground" />
-          </div>
-          <span className="mt-1 text-[9px] text-muted-foreground">Typically replies in minutes</span>
-        </div>
-        <div className="mx-4 mt-6 rounded-lg bg-message p-3 shadow-panel">
+        <div className="mx-4 mt-16 rounded-lg bg-message p-3 shadow-panel">
           <p className="text-xs leading-relaxed text-foreground">Hello! <span aria-hidden="true">👋</span><br />How can we help you today?</p>
           <p className="mt-2 text-right text-[8px] text-muted-foreground">10:24 AM ✓✓</p>
         </div>
@@ -202,7 +192,7 @@ function Index() {
       <footer className="border-t border-border py-7">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-5 text-xs text-muted-foreground sm:flex-row sm:px-8">
           <Brand />
-          <p>© 2026 NexaCare. Here when you need us.</p>
+          <p>© 2026 NexGenZ. Here when you need us.</p>
         </div>
       </footer>
     </main>
