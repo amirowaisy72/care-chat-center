@@ -68,14 +68,7 @@ function PhoneMockup() {
         <div className="flex items-center justify-between px-5 pt-3 text-[8px] font-bold text-foreground">
           <span>10:24</span><span className="tracking-wider">••• ▰</span>
         </div>
-        <div className="mt-7 flex flex-col items-center px-4">
-          <span className="grid size-14 place-items-center rounded-xl bg-whatsapp text-whatsapp-foreground shadow-glow">
-            <WhatsappIcon className="size-9" />
-          </span>
-          <div className="mt-4 flex items-center gap-1.5 text-sm font-bold text-foreground">
-            NexaCare <BadgeCheck className="size-4 fill-primary text-primary-foreground" />
-          </div>
-          <span className="mt-1 text-[9px] text-muted-foreground">Typically replies in minutes</span>
+        <div className="mt-9 flex flex-col items-center px-4">
         </div>
         <div className="mx-4 mt-6 rounded-lg bg-message p-3 shadow-panel">
           <p className="text-xs leading-relaxed text-foreground">Hello! <span aria-hidden="true">👋</span><br />How can we help you today?</p>
