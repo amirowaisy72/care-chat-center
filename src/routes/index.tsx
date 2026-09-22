@@ -35,15 +35,12 @@ export const Route = createFileRoute("/")({
 });
 
 const whatsappLink =
-  "https://wa.me/18392310239?text=Hello%20NexGenZ%2C%20I%20need%20help%20with%20my%20account.";
+  'https://wa.me/18392310239?text=Click%20%22Contact%20Customer%20Service%22%20and%20a%20message%20will%20be%20automatically%20generated%20in%20the%20chat%20input%20box.';
 
 function Brand() {
   return (
     <a href="#top" className="group flex items-center gap-2.5" aria-label="NexGenZ home">
-      <span className="relative grid size-9 place-items-center" aria-hidden="true">
-        <span className="absolute inset-1 rotate-45 rounded-sm border-2 border-primary transition-transform duration-300 group-hover:rotate-[135deg]" />
-        <span className="size-2 rounded-full bg-primary shadow-glow" />
-      </span>
+      <img src={ngzLogo.url} alt="NexGenZ logo" className="h-10 w-auto transition-transform duration-300 group-hover:scale-105" />
       <span>
         <span className="block font-display text-base font-bold leading-none text-foreground">NexGenZ</span>
         <span className="mt-1 block text-[9px] font-bold uppercase tracking-[0.28em] text-muted-foreground">Support</span>
