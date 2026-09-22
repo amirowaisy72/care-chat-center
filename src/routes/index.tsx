@@ -71,35 +71,54 @@ const supportTags = [
 
 function PhoneMockup() {
   return (
-    <div className="relative mx-auto h-[445px] w-full max-w-[620px]" aria-label="NexGenZ support conversation preview">
-      {supportTags.map((tag) => {
-        const Icon = tag.icon;
-        return (
-          <span
-            key={tag.label}
-            aria-hidden="true"
-            className={`absolute ${tag.side === "left" ? "left-0" : "right-0"} ${tag.top} hidden animate-rise-delayed items-center gap-2 rounded-lg border border-border bg-card/80 px-2.5 py-2.5 text-[10px] font-semibold text-foreground shadow-panel backdrop-blur-sm lg:flex`}
-          >
-            <span className="grid size-6 shrink-0 place-items-center rounded-md border border-primary/50 bg-primary/10 text-primary">
-              <Icon className="size-3" />
+    <div className="mx-auto w-full max-w-[620px]" aria-label="NexGenZ support conversation preview">
+      <div className="mb-6 flex flex-wrap items-center justify-center gap-2 lg:hidden">
+        {supportTags.map((tag) => {
+          const Icon = tag.icon;
+          return (
+            <span
+              key={tag.label}
+              className="flex items-center gap-2 rounded-lg border border-border bg-card/80 px-2.5 py-2 text-[10px] font-semibold text-foreground shadow-panel backdrop-blur-sm"
+            >
+              <span className="grid size-6 shrink-0 place-items-center rounded-md border border-primary/50 bg-primary/10 text-primary">
+                <Icon className="size-3" />
+              </span>
+              {tag.label}
             </span>
-            {tag.label}
-          </span>
-        );
-      })}
+          );
+        })}
+      </div>
 
-      <div className="phone-shell absolute left-1/2 top-0 h-[440px] w-[238px] -translate-x-1/2 overflow-hidden rounded-[2.4rem] border-[5px] border-device bg-device shadow-phone">
-        <div className="absolute left-1/2 top-0 z-10 h-6 w-24 -translate-x-1/2 rounded-b-2xl bg-device" />
-        <div className="flex items-center justify-between px-5 pt-3 text-[8px] font-bold text-foreground">
-          <span>10:24</span><span className="tracking-wider">••• ▰</span>
-        </div>
-        <div className="mx-4 mt-16 rounded-lg bg-message p-3 shadow-panel">
-          <p className="text-xs leading-relaxed text-foreground">Hello! <span aria-hidden="true">👋</span><br />How can we help you today?</p>
-          <p className="mt-2 text-right text-[8px] text-muted-foreground">10:24 AM ✓✓</p>
-        </div>
-        <div className="absolute bottom-4 left-4 right-4 flex items-center gap-2 rounded-full border border-border bg-card px-3 py-2 text-[9px] text-muted-foreground">
-          <span className="flex-1">Write a message...</span>
-          <span className="grid size-6 place-items-center rounded-full bg-whatsapp text-whatsapp-foreground"><ArrowRight className="size-3" /></span>
+      <div className="relative mx-auto h-[445px] w-full max-w-[620px]">
+        {supportTags.map((tag) => {
+          const Icon = tag.icon;
+          return (
+            <span
+              key={tag.label}
+              aria-hidden="true"
+              className={`absolute ${tag.side === "left" ? "left-0" : "right-0"} ${tag.top} hidden animate-rise-delayed items-center gap-2 rounded-lg border border-border bg-card/80 px-2.5 py-2.5 text-[10px] font-semibold text-foreground shadow-panel backdrop-blur-sm lg:flex`}
+            >
+              <span className="grid size-6 shrink-0 place-items-center rounded-md border border-primary/50 bg-primary/10 text-primary">
+                <Icon className="size-3" />
+              </span>
+              {tag.label}
+            </span>
+          );
+        })}
+
+        <div className="phone-shell absolute left-1/2 top-0 h-[440px] w-[238px] -translate-x-1/2 overflow-hidden rounded-[2.4rem] border-[5px] border-device bg-device shadow-phone">
+          <div className="absolute left-1/2 top-0 z-10 h-6 w-24 -translate-x-1/2 rounded-b-2xl bg-device" />
+          <div className="flex items-center justify-between px-5 pt-3 text-[8px] font-bold text-foreground">
+            <span>10:24</span><span className="tracking-wider">••• ▰</span>
+          </div>
+          <div className="mx-4 mt-16 rounded-lg bg-message p-3 shadow-panel">
+            <p className="text-xs leading-relaxed text-foreground">Hello! <span aria-hidden="true">👋</span><br />How can we help you today?</p>
+            <p className="mt-2 text-right text-[8px] text-muted-foreground">10:24 AM ✓✓</p>
+          </div>
+          <div className="absolute bottom-4 left-4 right-4 flex items-center gap-2 rounded-full border border-border bg-card px-3 py-2 text-[9px] text-muted-foreground">
+            <span className="flex-1">Write a message...</span>
+            <span className="grid size-6 place-items-center rounded-full bg-whatsapp text-whatsapp-foreground"><ArrowRight className="size-3" /></span>
+          </div>
         </div>
       </div>
     </div>
