@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import ngzLogo from "@/assets/ngz-logo.png.asset.json";
 import {
   ArrowRight,
   BadgeCheck,
